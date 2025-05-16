@@ -7,7 +7,7 @@ def main():
     model = YOLO('yolov8n.pt')
 
     # AVFoundation backend on macOS
-    cap = cv2.VideoCapture(0, cv2.CAP_AVFOUNDATION)
+    cap = cv2.VideoCapture(0)
 
     # 320x320 @ 30 FPS
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
